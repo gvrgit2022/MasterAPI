@@ -1,0 +1,2 @@
+﻿scaffold-DBcontext 'server=;database=HMS_Master_Dev;uid=gvrhms;pwd=' MySQL.EntityFrameworkCore -OutputDir Models\Master -Context 'MasterContext' -Force
+scaffold-DBcontext 'server=;database=HMS_Masters_Dev;uid=gvrhms;pwd=' Pomelo.EntityFrameworkCore.MySql  -t 'addresstypes', 'admissiontype'-OutputDir Models\Master -Context 'MasterContext' -Force

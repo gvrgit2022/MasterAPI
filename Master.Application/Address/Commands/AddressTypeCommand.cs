@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Master.Application.Address.Model;
-using Master.Infrastructure.Models.Address;
+using Master.Infrastructure.Models;
 
 namespace Master.Application.Address.Commands
 {
@@ -33,7 +33,7 @@ namespace Master.Application.Address.Commands
             { }
             public async Task<string> Handle(AddressTypeCommand request, CancellationToken cancellationtoken)
             {
-                var addressType = new Infrastructure.Models.Address.Addresstype();
+                var addressType = new Infrastructure.Models.Master.Addresstype();
                 addressType.AddressType1 = request.AddressType1;
                 addressType.AddressTypeId = request.AddressTypeId;
                 addressType.UserId = request.UserId;

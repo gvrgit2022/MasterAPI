@@ -26,7 +26,7 @@ namespace Master.Application.Address.Commands
         public string? Workstationid { get; set; }
         public DateTime Rowseq { get; set; }
         public int? Dspk { get; set; }
-
+         //nagaraju for testing git commit on 30062022
         public class AddressTypeCommandHandler : BaseHandler, IRequestHandler<AddressTypeCommand, string>
         {
             public AddressTypeCommandHandler(MasterContext hcontext, IMapper mapper) : base(hcontext, mapper)

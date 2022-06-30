@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Master.Application.Address.Model;
-using Master.Infrastructure.Models.Address;
+using Master.Infrastructure.Models.Master;
 
 namespace Master.Application.Admission.Commands
 {

@@ -24,6 +24,7 @@ namespace MasterAPI.Controllers
         }
         [HttpPost("SaveAddressType")]
         public async Task<IActionResult> SaveAddressType([FromBody] AddressTypeCommand addrCommand)
+
         {
 
             var response = await _mediator.Send(addrCommand);

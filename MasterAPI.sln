@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32611.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAPI", "MasterAPI\MasterAPI.csproj", "{99609259-DB5A-4D2B-A7F7-77CA5BDA0C53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterAPI", "MasterAPI\MasterAPI.csproj", "{99609259-DB5A-4D2B-A7F7-77CA5BDA0C53}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AAAEBF16-A218-4A9C-AEB0-0CC8C7CB51ED}"
 EndProject
@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{F228F192-900B-4E28-BB7B-91906E6AD1FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Infrastructure", "Master.Infrastructure\Master.Infrastructure.csproj", "{A8AEA0B5-A71F-4D30-8965-54BC45445393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Infrastructure", "Master.Infrastructure\Master.Infrastructure.csproj", "{A8AEA0B5-A71F-4D30-8965-54BC45445393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Application", "Master.Application\Master.Application.csproj", "{5D56B733-7DE6-4883-96D6-2D904084D921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Application", "Master.Application\Master.Application.csproj", "{5D56B733-7DE6-4883-96D6-2D904084D921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

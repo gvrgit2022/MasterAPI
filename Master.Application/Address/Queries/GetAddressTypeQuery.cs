@@ -21,16 +21,16 @@ public class GetAddressTypeQuery : IRequest<Addresstype>
 	public int AddressTypeId { get; set; }
 
     }
-    public class GetAddressTypeQueryQueryHandler : BaseHandler, IRequestHandler<GetAddressTypeQuery, Addresstype>
+    public class GetAddressTypeQueryHandler : BaseHandler, IRequestHandler<GetAddressTypeQuery, Addresstype>
     {
-        public GetAddressTypeQueryQueryHandler(MasterContext tcontext, IMapper mapper) : base(tcontext, mapper) { }
+        public GetAddressTypeQueryHandler(MasterContext tcontext, IMapper mapper) : base(tcontext, mapper) { }
 
         public async Task<Addresstype> Handle(GetAddressTypeQuery request, CancellationToken cancellationToken)
         {
             //var samples = await testContext.TutorialsTbls.Select
             //  .FirstOrDefaultAsync(cancellationToken);
 
-            var addrType = await masterContext.Addresstypes
+            var addrType = await masterContext.Addresstypes 
                  .Where(c => c.AddressTypeId == request.AddressTypeId)
                .ProjectTo<Addresstype>(ConfigurationProvider)
                .FirstOrDefaultAsync(cancellationToken);

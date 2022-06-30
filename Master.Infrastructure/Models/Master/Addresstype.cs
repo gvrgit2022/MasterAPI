@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Master.Infrastructure.Models.Address
+namespace Master.Infrastructure.Models.Master
 {
     /// <summary>
     /// This is used to deteremine the type of address 

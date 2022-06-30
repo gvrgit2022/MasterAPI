@@ -9,8 +9,8 @@ namespace MasterAPI.Controllers
     public class AdmissionTypeController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly ILogger<AddressTypeController> _logger;
-        public AdmissionTypeController(IMediator mediator, ILogger<AddressTypeController> logger)
+        private readonly ILogger<AdmissionTypeController> _logger;
+        public AdmissionTypeController(IMediator mediator, ILogger<AdmissionTypeController> logger)
         {
             this._mediator = mediator;
             this._logger = logger;

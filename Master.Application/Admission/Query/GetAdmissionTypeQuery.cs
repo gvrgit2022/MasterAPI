@@ -18,20 +18,20 @@ namespace Master.Application.Admission.Query
         public int Id { get; set; }
 
     }
-    public class GetAdmissionTypeQueryQueryHandler : BaseHandler, IRequestHandler<GetAdmissionTypeQuery, AdmissionType>
+    public class GetAdmissionTypeQueryHandler : BaseHandler, IRequestHandler<GetAdmissionTypeQuery, AdmissionType>
     {
-        public GetAdmissionTypeQueryQueryHandler(MasterContext tcontext, IMapper mapper) : base(tcontext, mapper) { }
+        public GetAdmissionTypeQueryHandler(MasterContext tcontext, IMapper mapper) : base(tcontext, mapper) { }
 
         public async Task<AdmissionType> Handle(GetAdmissionTypeQuery request, CancellationToken cancellationToken)
         {
             //var samples = await testContext.TutorialsTbls.Select
             //  .FirstOrDefaultAsync(cancellationToken);
 
-            var addrType = await masterContext.Admissiontypes
+                var admissiontype = await masterContext.Admissiontypes
                  
                .ProjectTo<AdmissionType>(ConfigurationProvider)
                .FirstOrDefaultAsync(cancellationToken);
-            return addrType;
+                return admissiontype;
         }
     }
 }
